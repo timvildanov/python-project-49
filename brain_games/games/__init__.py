@@ -1,3 +1,3 @@
-from brain_games.games import even
+from brain_games.games import calc, even, gcd, prime, progression
 
-__all__ = ["even"]
+__all__ = ["calc", "even", "gcd", "prime", "progression"]

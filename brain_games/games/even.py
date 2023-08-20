@@ -1,4 +1,4 @@
-from brain_games.game_logic import generate_random_number
+from brain_games.project_libs import generate_random_number
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 

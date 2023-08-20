@@ -1,10 +1,4 @@
-from random import randint
 from cli import get_user_name_cli, get_user_answer_cli
-from games import even
-
-def generate_random_number():
-    """Generate random number from 1 to 100."""
-    return randint(1, 100)
 
 
 def get_user_name():
