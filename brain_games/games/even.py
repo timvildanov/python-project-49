@@ -1,6 +1,6 @@
 from brain_games.game_logic import generate_random_number
 
-GAME_INFO = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def game_rule():

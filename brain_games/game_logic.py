@@ -26,7 +26,7 @@ def game_engine(game):
     """Main game logic"""
     print('Welcome to the Brain Games!')
     user_name = get_user_name()
-    print(game.GAME_INFO)
+    print(game.DESCRIPTION)
 
     correct_answers = 0
 
