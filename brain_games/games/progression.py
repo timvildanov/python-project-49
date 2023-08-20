@@ -4,6 +4,7 @@ DESCRIPTION = 'What number is missing in the progression?'
 
 
 def arithmetic_progression():
+    """Generates progression"""
     start_number = randint(1, 100)
     increment = randint(1, 10)
     length_of_progress = 10
