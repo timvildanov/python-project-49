@@ -12,6 +12,7 @@ def get_user_answer_cli():
     cli_user_answer = prompt.string('Your answer: ')
     return cli_user_answer
 
+
 def welcome_user():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')

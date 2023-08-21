@@ -13,7 +13,8 @@ def user_answer_checker(user_input, task_answer):
     if user_input == task_answer:
         return True, 'Correct!'
     else:
-        return False, f"'{user_input}' is wrong answer ;(. Correct answer was '{task_answer}'."
+        return False, (f"'{user_input}' is wrong answer ;(. "
+                       f"Correct answer was '{task_answer}'.")
 
 
 def game_engine(game):
