@@ -9,8 +9,8 @@ def arithmetic_progression():
     increment = randint(1, 10)
     length_of_progress = 10
     random_element_to_hide = randint(4, 7)
-    return list(range(start_number, start_number + length_of_progress * increment,
-                      increment)), random_element_to_hide
+    return list(range(start_number, start_number + length_of_progress *
+                      increment, increment)), random_element_to_hide
 
 
 def game_rule():
