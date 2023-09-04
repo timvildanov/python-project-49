@@ -7,10 +7,12 @@ def arithmetic_progression():
     """Generates progression"""
     start_number = randint(1, 100)
     increment = randint(1, 10)
-    length_of_progress = 10
+    elements_num = 10
     random_element_to_hide = randint(4, 7)
-    return list(range(start_number, start_number + length_of_progress *
-                      increment, increment)), random_element_to_hide
+    prog_list = list(range(start_number,
+                           start_number + elements_num * increment,
+                           increment))
+    return prog_list, random_element_to_hide
 
 
 def game_rule():
