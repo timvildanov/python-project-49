@@ -24,7 +24,6 @@ def play_game():
     generated_number1 = generate_random_number()
     generated_number2 = generate_random_number()
     game_operation, math_func = generate_random_operation()
-    user_question = (f'Question: {generated_number1} {game_operation}'
-                   f'{generated_number2}')
+    user_question = f'Question: {generated_number1} {game_operation} {generated_number2}'
     correct_answer = str(math_func(generated_number1, generated_number2))
     return user_question, correct_answer
