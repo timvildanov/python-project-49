@@ -6,8 +6,11 @@ authors = ["Timur <tim.vildanov@gmail.com>"]
 readme = "README.md"
 packages = [
     {include = "brain_games"},
-    {include = "scripts", from  = "brain_games"},
-    {include = "games", from  = "brain_games"}
+]
+repository = "https://github.com/timvildanov/python-project-49"
+classifiers = [
+    "Natural Language :: English",
+    "Programming Language :: Python :: ^3.10",
 ]
 
 [tool.poetry.scripts]

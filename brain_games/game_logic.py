@@ -1,14 +1,28 @@
-from cli import get_user_name_cli, get_user_answer_cli
+import prompt
+
+MAX_ATTEMPTS = 3
 
 
-def get_user_name():
+def get_user_name_cli():
+    """CLI function for username."""
+    cli_user_name = prompt.string('May I have your name? ')
+    return cli_user_name
+
+
+def get_user_answer_cli():
+    """CLI function for user answer"""
+    cli_user_answer = prompt.string('Your answer: ')
+    return cli_user_answer
+
+
+def input_user_name():
 
     user_name = get_user_name_cli()
     print(f'Hello, {user_name}!')
     return user_name
 
 
-def user_answer_checker(user_input, task_answer):
+def check_user_answer(user_input, task_answer):
 
     if user_input == task_answer:
         return True, 'Correct!'
@@ -17,19 +31,19 @@ def user_answer_checker(user_input, task_answer):
                        f"Correct answer was '{task_answer}'.")
 
 
-def game_engine(game):
+def main_game_loop(game):
     """Main game logic"""
     print('Welcome to the Brain Games!')
-    user_name = get_user_name()
+    user_name = input_user_name()
     print(game.DESCRIPTION)
 
     correct_answers = 0
 
-    while correct_answers < 3:
-        question, correct_answer = game.game_rule()
+    while correct_answers < MAX_ATTEMPTS:
+        question, correct_answer = game.play_game()
         print(question)
         user_response = get_user_answer_cli()
-        result, response = user_answer_checker(user_response, correct_answer)
+        result, response = check_user_answer(user_response, correct_answer)
         print(response)
 
         if result:

@@ -17,6 +17,17 @@ The package contains five simple mathematics quiz games:
 - Arithmetic progression `brain-progression`
 - Prime number `brain-prime`
 
+## Required versions  
+### Python  
+">=3.10"
+
+## Makefile
+#### Using the Makefile you can generate all the needed packages for you virtual environment
+```make install``` to install poetry packages. \
+```make build``` to build your packages inside your project. \
+```make publish``` It will let us execute the publish command knowing exactly what is going into the build. \
+```make package-install``` installs the built package from our OS, so we can start using simple shell commands.
+
 
 ## Usage
 

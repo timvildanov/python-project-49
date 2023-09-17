@@ -1,5 +1,5 @@
 import operator
-from brain_games.project_libs import generate_random_number
+from brain_games.randomize import generate_random_number
 from random import choice
 
 DESCRIPTION = 'What is the result of the expression?'
@@ -19,12 +19,12 @@ def generate_random_operation():  # function to choose math operation
     return choice_of_operation, operation
 
 
-def game_rule():
+def play_game():
     """Generates 2 random numbers and calculates result"""
     generated_number1 = generate_random_number()
     generated_number2 = generate_random_number()
     game_operation, math_func = generate_random_operation()
-    asking_user = (f'Question: {generated_number1} {game_operation}'
-                   f' {generated_number2}')
+    user_question = (f'Question: {generated_number1} {game_operation}'
+                   f'{generated_number2}')
     correct_answer = str(math_func(generated_number1, generated_number2))
-    return asking_user, correct_answer
+    return user_question, correct_answer

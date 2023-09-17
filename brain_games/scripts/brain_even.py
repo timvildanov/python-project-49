@@ -3,7 +3,7 @@ from brain_games import games, game_logic
 
 
 def main():
-    game_logic.game_engine(games.even)
+    game_logic.main_game_loop(games.even)
 
 
 if __name__ == '__main__':

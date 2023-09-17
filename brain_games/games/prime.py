@@ -1,4 +1,4 @@
-from brain_games.project_libs import generate_random_number
+from brain_games.randomize import generate_random_number
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
@@ -16,14 +16,13 @@ def is_prime(number):
     return True
 
 
-def game_rule():
+def prime_result(task_answer):
+    return 'yes' if task_answer else 'no'
+
+
+def play_game():
     """Generates prime number and answer"""
     random_number = generate_random_number()
-    asking_user_task = f'Question: {random_number}'
+    question_user_task = f'Question: {random_number}'
     task_answer = is_prime(random_number)
-    task_result = ''
-    if task_answer:
-        task_result += 'yes'
-    else:
-        task_result += 'no'
-    return asking_user_task, str(task_result)
+    return question_user_task, prime_result(task_answer)
