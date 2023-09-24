@@ -16,7 +16,7 @@ def is_prime(number):
     return True
 
 
-def prime_result(task_answer):
+def return_binary_result(task_answer):
     return 'yes' if task_answer else 'no'
 
 
@@ -25,4 +25,4 @@ def play_game():
     random_number = generate_random_number()
     question_user_task = f'Question: {random_number}'
     task_answer = is_prime(random_number)
-    return question_user_task, prime_result(task_answer)
+    return question_user_task, return_binary_result(task_answer)
