@@ -5,7 +5,7 @@ from random import choice
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def generate_random_operation():  # function to choose math operation
+def generate_random_operation():
     """Generate random operation. Return str sign and math operator"""
 
     calc_operations = {

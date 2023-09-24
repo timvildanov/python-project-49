@@ -31,7 +31,7 @@ def check_user_answer(user_input, task_answer):
                        f"Correct answer was '{task_answer}'.")
 
 
-def main_game_loop(game):
+def play_games(game):
     """Main game logic"""
     print('Welcome to the Brain Games!')
     user_name = input_user_name()
